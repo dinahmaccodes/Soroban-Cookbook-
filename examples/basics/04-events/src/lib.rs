@@ -148,8 +148,7 @@ impl EventsContract {
     /// Emit `count` indexed events – demonstrates a loop emission pattern.
     pub fn emit_multiple(env: Env, count: u32) {
         for i in 0..count {
-            env.events()
-                .publish((symbol_short!("multi"), i), i as u64);
+            env.events().publish((symbol_short!("multi"), i), i as u64);
         }
     }
 }
