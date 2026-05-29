@@ -111,7 +111,10 @@ fn test_validate_rejects_zero_count_header() {
 
     // Manually craft a blob with count = 0.
     let mut bad = Bytes::new(&env);
-    bad.push_back(0); bad.push_back(0); bad.push_back(0); bad.push_back(0);
+    bad.push_back(0);
+    bad.push_back(0);
+    bad.push_back(0);
+    bad.push_back(0);
     assert!(!client.validate_auth_vec(&bad));
 }
 
@@ -121,11 +124,14 @@ fn test_auth_vec_len() {
     let contract_id = env.register_contract(None, MultiPartyAuthContract);
     let client = MultiPartyAuthContractClient::new(&env, &contract_id);
 
-    let signers = Vec::from_array(&env, [
-        Address::generate(&env),
-        Address::generate(&env),
-        Address::generate(&env),
-    ]);
+    let signers = Vec::from_array(
+        &env,
+        [
+            Address::generate(&env),
+            Address::generate(&env),
+            Address::generate(&env),
+        ],
+    );
     let encoded = client.encode_auth_vec(&signers);
     assert_eq!(client.auth_vec_len(&encoded), 3);
 }
@@ -577,7 +583,13 @@ fn test_set_threshold_success() {
     let s3 = Address::generate(&env);
     let proposal_id = Symbol::new(&env, "mgmt7");
 
-    setup_multisig(&env, &client, &proposal_id, 1, &[s1.clone(), s2.clone(), s3.clone()]);
+    setup_multisig(
+        &env,
+        &client,
+        &proposal_id,
+        1,
+        &[s1.clone(), s2.clone(), s3.clone()],
+    );
 
     client.set_threshold(&s1, &proposal_id, &3u32);
     assert_eq!(client.get_threshold(&proposal_id), 3);
