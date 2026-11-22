@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
+<html lang="en" class="rust sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -15,8 +15,8 @@
         <link rel="icon" href="../favicon-de23e50b.svg">
         <link rel="shortcut icon" href="../favicon-8114d1fc.png">
         <link rel="stylesheet" href="../css/variables-8adf115d.css">
-        <link rel="stylesheet" href="../css/general-0392ca55.css">
-        <link rel="stylesheet" href="../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
         <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -28,17 +28,18 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/theme/language-selector-e5b421c9.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
-            const default_light_theme = "light";
+            const default_light_theme = "rust";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5061486f.js";
+            window.path_to_searchindex_js = "../searchindex-7ddff20c.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-ecdbaa17.js"></script>
+        <script src="../toc-5c19c24f.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -76,7 +77,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('light')
+            html.classList.remove('rust')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -142,6 +143,12 @@
                     <div class="right-buttons">
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/Soroban-Cookbook/Soroban-Cookbook" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/Soroban-Cookbook/Soroban-Cookbook/edit/main/book/src/guides/deployment.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
                         </a>
 
                     </div>
@@ -407,7 +414,7 @@ soroban contract invoke \
 <hr>
 <h2 id="contract-upgrades"><a class="header" href="#contract-upgrades">Contract Upgrades</a></h2>
 <h3 id="upgradeable-contract-pattern"><a class="header" href="#upgradeable-contract-pattern">Upgradeable Contract Pattern</a></h3>
-<pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+<pre class="playground"><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>pub fn upgrade(env: Env, new_wasm_hash: BytesN&lt;32&gt;) {
     let admin: Address = env.storage().instance()
@@ -454,7 +461,7 @@ soroban contract invoke \
 <hr>
 <h2 id="emergency-procedures"><a class="header" href="#emergency-procedures">Emergency Procedures</a></h2>
 <h3 id="pause--unpause-pattern"><a class="header" href="#pause--unpause-pattern">Pause / Unpause Pattern</a></h3>
-<pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+<pre class="playground"><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
 </span><span class="boring">fn main() {
 </span>pub fn pause(env: Env) {
     require_admin(&amp;env);
@@ -473,8 +480,60 @@ fn check_not_paused(env: &amp;Env) {
 }
 <span class="boring">}</span></code></pre>
 <hr>
+<h2 id="monitoring--alerting"><a class="header" href="#monitoring--alerting">Monitoring &amp; Alerting</a></h2>
+<p>Deploying a contract is not the end of the operational lifecycle — a mainnet
+contract needs ongoing monitoring so the team hears about problems before
+users do.</p>
+<h3 id="what-to-monitor"><a class="header" href="#what-to-monitor">What to Monitor</a></h3>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Signal</th><th>Why it matters</th><th>How to check</th></tr>
+</thead>
+<tbody>
+<tr><td>Invocation failures</td><td>Spikes usually mean a bad client release, an auth regression, or an upstream RPC issue</td><td>Poll <code>soroban events</code> or a Horizon/RPC operations feed for the contract ID and track failure rate over time</td></tr>
+<tr><td>Storage TTL / rent</td><td>Persistent or instance entries that expire mid-operation cause unexpected <code>MissingValue</code> panics</td><td>Track <code>env.storage().*().get_ttl()</code> output for key entries, or query ledger entry TTL via RPC <code>getLedgerEntries</code></td></tr>
+<tr><td>Admin / fee-payer account balance</td><td>A drained fee-payer account blocks every invocation until refunded</td><td>Check balance with <code>soroban keys balance &lt;identity&gt; --network mainnet</code> on a schedule</td></tr>
+<tr><td>Contract paused state</td><td>Confirms an emergency pause (see <a href="#pause--unpause-pattern">Pause / Unpause Pattern</a>) was intentional and not accidental</td><td>Invoke a read-only status/<code>paused</code> getter and compare against the expected state</td></tr>
+<tr><td>CI/CD pipeline health</td><td>A red pipeline on <code>main</code> means the next deploy is blocked</td><td>Watch the <strong>Test and Lint</strong> and <strong>Deploy Docs</strong> workflow runs described in <code>.github/workflows/README.md</code></td></tr>
+</tbody>
+</table>
+</div>
+<h3 id="dashboards"><a class="header" href="#dashboards">Dashboards</a></h3>
+<ul>
+<li><strong>Stellar Expert</strong> (<code>https://stellar.expert</code>) and <strong>Stellar Laboratory</strong> — inspect contract invocations, events, and balances for a given contract ID without any extra setup.</li>
+<li><strong>GitHub Actions</strong> — the <em>Actions</em> tab on the repository is the dashboard of record for build/test/deploy health; failing runs on <code>main</code> should be treated as a P1 signal.</li>
+<li><strong>Codecov</strong> — the coverage dashboard configured in <code>codecov.yml</code> flags coverage regressions on each PR.</li>
+</ul>
+<p>For teams that need alerting rather than manual dashboard checks, a small
+cron job or scheduled Action that polls <code>soroban events</code> / RPC and posts to
+your existing chat/pager tooling on threshold breaches is enough to start —
+there is no dependency on a specific vendor.</p>
+<h3 id="alert-response-runbook"><a class="header" href="#alert-response-runbook">Alert Response Runbook</a></h3>
+<ol>
+<li><strong>Acknowledge</strong> — confirm the alert is real (check the dashboard/RPC query
+named in the “How to check” column above) before taking action.</li>
+<li><strong>Assess blast radius</strong> — is this one failing invocation type, or every
+call to the contract? Check recent events for the contract ID to see
+whether it correlates with a specific function or caller.</li>
+<li><strong>Contain if needed</strong> — if funds or state integrity are at risk, use the
+<a href="#pause--unpause-pattern">Pause / Unpause Pattern</a> to stop further writes
+while you investigate.</li>
+<li><strong>Diagnose</strong> — reproduce against Testnet with the same inputs where
+possible, and check the <a href="#fee-estimation">Fee Estimation</a> simulate output
+for resource/fee-related failures.</li>
+<li><strong>Resolve</strong> — deploy a fix via the normal <a href="#mainnet-deployment-steps">Mainnet Deployment
+Steps</a>, or extend TTL for entries close to
+expiry using <code>extend_ttl</code>.</li>
+<li><strong>Unpause and verify</strong> — once the fix is confirmed on Testnet and deployed,
+unpause and re-run the read-only checks from the monitoring table above.</li>
+<li><strong>Record</strong> — note the trigger, timeline, and resolution somewhere durable
+(issue tracker or incident log) so the next on-call has context.</li>
+</ol>
+<hr>
 <h2 id="additional-resources"><a class="header" href="#additional-resources">Additional Resources</a></h2>
 <ul>
+<li><a href="../docs/deployment-best-practices.html">Deployment Best Practices</a>: pre-deployment checklist, network selection, monitoring, and upgrade strategies</li>
 <li><a href="https://developers.stellar.org/docs/tools/developer-tools/cli">Soroban CLI Reference</a></li>
 <li><a href="https://developers.stellar.org/docs/networks">Network Configuration</a></li>
 <li><a href="https://developers.stellar.org/docs/smart-contracts/fees">Fee Documentation</a></li>
@@ -486,11 +545,11 @@ fn check_not_paused(env: &amp;Env) {
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../guides/testing.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../guides/local-simulation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../guides/ethereum-to-soroban.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../docs/deployment-best-practices.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -500,11 +559,11 @@ fn check_not_paused(env: &amp;Env) {
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../guides/testing.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../guides/local-simulation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../guides/ethereum-to-soroban.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../docs/deployment-best-practices.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
@@ -530,9 +589,11 @@ fn check_not_paused(env: &amp;Env) {
 
         <script src="../clipboard-1626706a.min.js"></script>
         <script src="../highlight-abc7f01d.js"></script>
-        <script src="../book-c22b7243.js"></script>
+        <script src="../book-609e4cb8.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="../theme/analytics-2354a5fb.js"></script>
+        <script src="../src/theme/language-selector-f7cc599e.js"></script>
 
 
 

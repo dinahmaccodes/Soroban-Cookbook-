@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light sidebar-visible" dir="ltr">
+<html lang="en" class="rust sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -15,8 +15,8 @@
         <link rel="icon" href="../favicon-de23e50b.svg">
         <link rel="shortcut icon" href="../favicon-8114d1fc.png">
         <link rel="stylesheet" href="../css/variables-8adf115d.css">
-        <link rel="stylesheet" href="../css/general-0392ca55.css">
-        <link rel="stylesheet" href="../css/chrome-fc474251.css">
+        <link rel="stylesheet" href="../css/general-e96d0476.css">
+        <link rel="stylesheet" href="../css/chrome-d279d366.css">
         <link rel="stylesheet" href="../css/print-9e4910d8.css" media="print">
 
         <!-- Fonts -->
@@ -28,17 +28,18 @@
         <link rel="stylesheet" id="mdbook-ayu-highlight-css" href="../ayu-highlight-3fdfc3ac.css">
 
         <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/theme/language-selector-e5b421c9.css">
 
 
         <!-- Provide site root and default themes to javascript -->
         <script>
             const path_to_root = "../";
-            const default_light_theme = "light";
+            const default_light_theme = "rust";
             const default_dark_theme = "navy";
-            window.path_to_searchindex_js = "../searchindex-5061486f.js";
+            window.path_to_searchindex_js = "../searchindex-7ddff20c.js";
         </script>
         <!-- Start loading toc.js asap -->
-        <script src="../toc-ecdbaa17.js"></script>
+        <script src="../toc-5c19c24f.js"></script>
     </head>
     <body>
     <div id="mdbook-help-container">
@@ -76,7 +77,7 @@
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
             const html = document.documentElement;
-            html.classList.remove('light')
+            html.classList.remove('rust')
             html.classList.add(theme);
             html.classList.add("js");
         </script>
@@ -143,6 +144,12 @@
                         <a href="../print.html" title="Print this book" aria-label="Print this book">
                             <span class=fa-svg id="print-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M128 0C92.7 0 64 28.7 64 64v96h64V64H354.7L384 93.3V160h64V93.3c0-17-6.7-33.3-18.7-45.3L400 18.7C388 6.7 371.7 0 354.7 0H128zM384 352v32 64H128V384 368 352H384zm64 32h32c17.7 0 32-14.3 32-32V256c0-35.3-28.7-64-64-64H64c-35.3 0-64 28.7-64 64v96c0 17.7 14.3 32 32 32H64v64c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V384zm-16-88c-13.3 0-24-10.7-24-24s10.7-24 24-24s24 10.7 24 24s-10.7 24-24 24z"/></svg></span>
                         </a>
+                        <a href="https://github.com/Soroban-Cookbook/Soroban-Cookbook" title="Git repository" aria-label="Git repository">
+                            <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span>
+                        </a>
+                        <a href="https://github.com/Soroban-Cookbook/Soroban-Cookbook/edit/main/book/src/docs/style-guide.md" title="Suggest an edit" aria-label="Suggest an edit" rel="edit">
+                            <span class=fa-svg id="git-edit-button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M421.7 220.3l-11.3 11.3-22.6 22.6-205 205c-6.6 6.6-14.8 11.5-23.8 14.1L30.8 511c-8.4 2.5-17.5 .2-23.7-6.1S-1.5 489.7 1 481.2L38.7 353.1c2.6-9 7.5-17.2 14.1-23.8l205-205 22.6-22.6 11.3-11.3 33.9 33.9 62.1 62.1 33.9 33.9zM96 353.9l-9.3 9.3c-.9 .9-1.6 2.1-2 3.4l-25.3 86 86-25.3c1.3-.4 2.5-1.1 3.4-2l9.3-9.3H112c-8.8 0-16-7.2-16-16V353.9zM453.3 19.3l39.4 39.4c25 25 25 65.5 0 90.5l-14.5 14.5-22.6 22.6-11.3 11.3-33.9-33.9-62.1-62.1L314.3 67.7l11.3-11.3 22.6-22.6 14.5-14.5c25-25 65.5-25 90.5 0z"/></svg></span>
+                        </a>
 
                     </div>
                 </div>
@@ -174,122 +181,154 @@
 
                 <div id="mdbook-content" class="content">
                     <main>
-                        <h1 id="soroban-cookbook-style-guide"><a class="header" href="#soroban-cookbook-style-guide">Soroban Cookbook Style Guide</a></h1>
-<p>This guide outlines the coding standards and best practices for the Soroban Cookbook. Adhering to these guidelines ensures consistency, readability, and high quality across all examples.</p>
-<h2 id="1-naming-conventions"><a class="header" href="#1-naming-conventions">1. Naming Conventions</a></h2>
-<p>Follow standard <a href="https://rust-lang.github.io/api-guidelines/naming.html">Rust naming conventions</a> with Soroban-specific refinements:</p>
-<h3 id="contracts-and-types"><a class="header" href="#contracts-and-types">Contracts and Types</a></h3>
+                        <h1 id="documentation-style-guide"><a class="header" href="#documentation-style-guide">Documentation Style Guide</a></h1>
+<p>This guide defines the standards for writing and maintaining documentation in this project. Following these guidelines keeps our documentation consistent, accurate, and approachable for all readers.</p>
+<h2 id="writing-standards"><a class="header" href="#writing-standards">Writing Standards</a></h2>
+<h3 id="tone-and-voice"><a class="header" href="#tone-and-voice">Tone and Voice</a></h3>
 <ul>
-<li><strong>Contract Structs</strong>: <code>PascalCase</code> (e.g., <code>HelloContract</code>, <code>LiquidityPool</code>).</li>
-<li><strong>Custom Types/Enums</strong>: <code>PascalCase</code> (e.g., <code>DataKey</code>, <code>ContractError</code>).</li>
-<li><strong>Traits</strong>: <code>PascalCase</code> (e.g., <code>VestingInterface</code>).</li>
+<li>Write in a <strong>clear, direct, and friendly</strong> tone.</li>
+<li>Prefer the <strong>active voice</strong>: “The compiler checks the type” rather than “The type is checked by the compiler.”</li>
+<li>Address the reader as <strong>“you”</strong>. Refer to the project as <strong>“we”</strong> when describing team decisions or conventions.</li>
+<li>Keep sentences short. Aim for one idea per sentence.</li>
+<li>Avoid jargon unless it is defined on first use. Link to a glossary entry or explain inline.</li>
 </ul>
-<h3 id="functions-and-variables"><a class="header" href="#functions-and-variables">Functions and Variables</a></h3>
+<h3 id="terminology"><a class="header" href="#terminology">Terminology</a></h3>
+<p>Use the following terms consistently throughout the documentation:</p>
+<div class="table-wrapper">
+<table>
+<thead>
+<tr><th>Preferred term</th><th>Avoid</th></tr>
+</thead>
+<tbody>
+<tr><td>function</td><td>method (unless referring to a trait method)</td></tr>
+<tr><td>crate</td><td>package, library</td></tr>
+<tr><td>command</td><td>instruction</td></tr>
+<tr><td>configuration</td><td>config (in prose)</td></tr>
+<tr><td>directory</td><td>folder</td></tr>
+</tbody>
+</table>
+</div>
 <ul>
-<li><strong>Contract Functions</strong>: <code>snake_case</code> (e.g., <code>get_balance</code>, <code>initialize</code>).</li>
-<li><strong>Internal Variables</strong>: <code>snake_case</code> (e.g., <code>user_address</code>, <code>token_amount</code>).</li>
-<li><strong>Constants</strong>: <code>SCREAMING_SNAKE_CASE</code> (e.g., <code>MAX_SUPPLY</code>).</li>
+<li>Capitalize product names exactly as the project does.</li>
+<li>Use code formatting for identifiers, file names, commands, and literal values (for example, <code>Cargo.toml</code>, <code>cargo build</code>).</li>
+<li>Spell out acronyms on first use, for example, “Application Programming Interface (API)”.</li>
 </ul>
-<h3 id="events-and-symbols"><a class="header" href="#events-and-symbols">Events and Symbols</a></h3>
+<h3 id="inclusive-language"><a class="header" href="#inclusive-language">Inclusive Language</a></h3>
 <ul>
-<li><strong>Event Tags</strong>: <code>snake_case</code> (e.g., <code>transfer</code>, <code>mint</code>). Usually defined using <code>symbol_short!</code>.</li>
-<li><strong>Storage Keys</strong>: Descriptive names using <code>Symbol</code> or <code>DataKey</code> enums.</li>
+<li>Use gender-neutral language. Prefer “they” over “he/she”.</li>
+<li>Avoid idioms, slang, and culture-specific references that may not translate well.</li>
+<li>Use “allowlist”/“denylist” instead of “whitelist”/“blacklist”.</li>
+<li>Avoid ableist terms such as “crazy”, “insane”, or “dummy” when describing code or behavior. Prefer “unexpected”, “placeholder”, or “stub”.</li>
+<li>Refer to people by their roles rather than descriptors where possible.</li>
 </ul>
-<hr>
-<h2 id="2-documentation-standards"><a class="header" href="#2-documentation-standards">2. Documentation Standards</a></h2>
-<p>Documentation is critical for a cookbook. Every example must be self-explanatory.</p>
-<h3 id="module-level-documentation-"><a class="header" href="#module-level-documentation-">Module-Level Documentation (<code>//!</code>)</a></h3>
-<p>Every <code>lib.rs</code> must start with module-level docs:</p>
+<h2 id="code-example-standards"><a class="header" href="#code-example-standards">Code Example Standards</a></h2>
+<h3 id="complete-and-runnable"><a class="header" href="#complete-and-runnable">Complete and Runnable</a></h3>
 <ul>
-<li><strong>Title</strong>: Clear name of the example.</li>
-<li><strong>Description</strong>: What the contract does and why it matters.</li>
-<li><strong>Key Concepts</strong>: List of Soroban features demonstrated (e.g., “Instance Storage”, “Custom Errors”).</li>
-<li><strong>Design Decisions</strong>: Explanation of <em>why</em> specific patterns were used (e.g., “Using <code>Persistent</code> storage for user balances to prevent expiration”).</li>
+<li>Every code example should be <strong>complete enough to compile and run</strong> unless it is explicitly marked as a fragment.</li>
+<li>Include necessary imports, <code>fn main()</code>, and any required setup.</li>
+<li>If an example is intentionally partial, indicate this with a comment such as <code>// ...</code> and explain what is omitted.</li>
 </ul>
-<h3 id="function-level-documentation-"><a class="header" href="#function-level-documentation-">Function-Level Documentation (<code>///</code>)</a></h3>
-<p>Public contract functions must include:</p>
+<pre class="playground"><code class="language-rust edition2021">use std::collections::HashMap;
+
+fn main() {
+    let mut counts: HashMap&lt;&amp;str, u32&gt; = HashMap::new();
+    for word in ["apple", "banana", "apple"] {
+        *counts.entry(word).or_insert(0) += 1;
+    }
+    println!("{counts:?}");
+}</code></pre>
+<h3 id="no_std-compatibility"><a class="header" href="#no_std-compatibility"><code>no_std</code> Compatibility</a></h3>
 <ul>
-<li><strong>Summary</strong>: A single line describing the action.</li>
-<li><strong>Arguments</strong>: Detailed list of parameters.</li>
-<li><strong>Returns</strong>: Explanation of the return value.</li>
-<li><strong>Errors</strong>: List of possible <code>contracterror</code> variants the function might return.</li>
-<li><strong>Example</strong>: A short snippet or description of how to call the function.</li>
+<li>When an example is intended for <code>no_std</code> environments, state this explicitly and avoid the standard library.</li>
+<li>Use <code>#![no_std]</code> at the crate root and document any required <code>extern crate alloc;</code> usage.</li>
 </ul>
-<h3 id="example-readmemd-structure"><a class="header" href="#example-readmemd-structure">Example <code>README.md</code> Structure</a></h3>
-<p>Every example folder must contain a <code>README.md</code> with:</p>
-<ol>
-<li><strong>Overview</strong>: Brief description.</li>
-<li><strong>Key Soroban Patterns</strong>: Technical highlights.</li>
-<li><strong>Usage</strong>: Step-by-step commands to build and test.</li>
-<li><strong>Code Deep Dive</strong>: Explanation of the most important logic blocks.</li>
-</ol>
-<hr>
-<h2 id="3-testing-standards"><a class="header" href="#3-testing-standards">3. Testing Standards</a></h2>
-<p>High-quality examples require robust testing.</p>
-<h3 id="structure"><a class="header" href="#structure">Structure</a></h3>
-<ul>
-<li><strong>Unit Tests</strong>: Place in a dedicated <code>src/test.rs</code> file.</li>
-<li><strong>Integration Tests</strong>: Place in the workspace <code>tests/</code> directory if they involve multiple contracts.</li>
-<li><strong>Separation</strong>: Use <code>#[cfg(test)] mod test;</code> in <code>lib.rs</code> to keep the testing logic separate from implementation.</li>
-</ul>
-<h3 id="best-practices"><a class="header" href="#best-practices">Best Practices</a></h3>
-<ul>
-<li><strong>Naming</strong>: Use descriptive test names: <code>test_transfer_insufficient_funds_fails</code>.</li>
-<li><strong>Coverage</strong>: Aim for 100% path coverage for business logic.</li>
-<li><strong>Mocking Auth</strong>: Always use <code>env.mock_all_auths()</code> for testing authorization-protected functions.</li>
-<li><strong>Assertions</strong>: Use <code>assert_eq!</code>, <code>assert!</code>, and <code>expect_err</code> to verify state and failures.</li>
-</ul>
-<hr>
-<h2 id="4-clippy-and-lints"><a class="header" href="#4-clippy-and-lints">4. Clippy and Lints</a></h2>
-<p>Clean code is enforced through Clippy and standard Rust lints.</p>
-<h3 id="mandatory-directives"><a class="header" href="#mandatory-directives">Mandatory Directives</a></h3>
-<pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
-</span>#![no_std] // All contracts must be no_std
+<pre class="playground"><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
+</span>#![no_std]
+
 <span class="boring">fn main() {
-</span><span class="boring">}</span></code></pre>
-<h3 id="recommended-lints"><a class="header" href="#recommended-lints">Recommended Lints</a></h3>
-<p>In CI, we run:</p>
-<pre><code class="language-bash">cargo clippy --workspace --all-targets --all-features -- -D warnings
-</code></pre>
-<h3 id="developer-flow"><a class="header" href="#developer-flow">Developer Flow</a></h3>
-<ol>
-<li>Run <code>cargo fmt</code> before every commit.</li>
-<li>Ensure <code>cargo clippy</code> has zero warnings.</li>
-<li>Use <code>cargo fix</code> for automated improvements where possible.</li>
-</ol>
-<hr>
-<h2 id="5-soroban-specifics"><a class="header" href="#5-soroban-specifics">5. Soroban Specifics</a></h2>
+</span>pub fn add(a: u32, b: u32) -&gt; u32 {
+    a + b
+}
+<span class="boring">}</span></code></pre>
 <h3 id="error-handling"><a class="header" href="#error-handling">Error Handling</a></h3>
 <ul>
-<li>Use <code>#[contracterror]</code> for all user-facing errors.</li>
-<li>Prefer <code>Result&lt;T, ContractError&gt;</code> return types over <code>panic!</code>.</li>
-<li>Assign explicit error codes (e.g., <code>InvalidAmount = 1</code>).</li>
+<li>Demonstrate idiomatic error handling. Prefer <code>Result</code> and the <code>?</code> operator over <code>unwrap()</code> or <code>expect()</code> in examples unless the example specifically illustrates panics.</li>
+<li>When <code>unwrap()</code> is used for brevity, add a comment explaining that real code should handle the error.</li>
 </ul>
-<h3 id="storage-optimization"><a class="header" href="#storage-optimization">Storage Optimization</a></h3>
+<pre class="playground"><code class="language-rust edition2021"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>use std::fs;
+
+fn read_config(path: &amp;str) -&gt; Result&lt;String, std::io::Error&gt; {
+    let contents = fs::read_to_string(path)?;
+    Ok(contents)
+}
+<span class="boring">}</span></code></pre>
+<h3 id="comments"><a class="header" href="#comments">Comments</a></h3>
 <ul>
-<li><strong>Instance</strong>: Use for configuration and contract metadata.</li>
-<li><strong>Persistent</strong>: Use for user data and balances.</li>
-<li><strong>Temporary</strong>: Use for short-lived state like nonces or temporary locks.</li>
-<li><strong>TTL</strong>: Always consider the Time-To-Live for storage and include bump logic where necessary.</li>
+<li>Use comments to explain <strong>why</strong>, not <strong>what</strong>. The code itself should make the “what” clear.</li>
+<li>Keep comments up to date with the code they describe.</li>
+<li>Use <code>//</code> for inline comments and <code>///</code> for documentation comments on public items.</li>
 </ul>
-<h3 id="best-practices-1"><a class="header" href="#best-practices-1">Best Practices</a></h3>
+<h2 id="formatting-guidelines"><a class="header" href="#formatting-guidelines">Formatting Guidelines</a></h2>
+<h3 id="headings"><a class="header" href="#headings">Headings</a></h3>
 <ul>
-<li><strong>Type Safety</strong>: Use custom enums for storage keys (<code>DataKey</code>) rather than raw symbols.</li>
-<li><strong>Events</strong>: Emit events for all significant state changes.</li>
-<li><strong>Validation</strong>: Validate all inputs at the entry point of the function.</li>
+<li>Use <strong>sentence case</strong> for headings: “Getting started”, not “Getting Started”.</li>
+<li>Do not skip heading levels. A document should start with a single <code>#</code> title, followed by <code>##</code> sections, then <code>###</code> subsections.</li>
+<li>Keep headings short and descriptive.</li>
 </ul>
-<h3 id="best-practices-reference"><a class="header" href="#best-practices-reference">Best Practices Reference</a></h3>
-<p>For security-specific patterns and performance optimization, refer to the <a href="./best-practices.html">Best Practices Guide</a>. The Style Guide and Best Practices Guide together form the full standard for Soroban Cookbook contributions.</p>
+<h3 id="lists"><a class="header" href="#lists">Lists</a></h3>
+<ul>
+<li>Use <code>-</code> for unordered lists and <code>1.</code> for ordered lists.</li>
+<li>Keep list items parallel in structure.</li>
+<li>End list items with a period only when they are complete sentences.</li>
+</ul>
+<h3 id="code-fences"><a class="header" href="#code-fences">Code Fences</a></h3>
+<ul>
+<li>Always specify a language tag on fenced code blocks so syntax highlighting works correctly.</li>
+</ul>
+<pre><code class="language-markdown">```rust
+fn main() {
+    println!("Hello, world!");
+}
+```
+</code></pre>
+<ul>
+<li>Use <code>text</code> for plain output or non-code content.</li>
+<li>Keep lines within code blocks reasonably short to avoid horizontal scrolling.</li>
+</ul>
+<h3 id="links"><a class="header" href="#links">Links</a></h3>
+<ul>
+<li>Use descriptive link text. Prefer “<a href="configuration.html">the configuration guide</a>” over “<a href="configuration.html">click here</a>”.</li>
+<li>Use relative links for pages within the book so they work in all deployment targets.</li>
+<li>Verify that links resolve before submitting changes.</li>
+</ul>
+<h2 id="tool-recommendations"><a class="header" href="#tool-recommendations">Tool Recommendations</a></h2>
+<p>The following tools help maintain consistent, high-quality documentation:</p>
+<ul>
+<li><strong>mdBook</strong> — builds this documentation site. Run <code>mdbook build</code> in the <code>book/</code> directory to verify changes compile without errors, and <code>mdbook serve</code> for a live preview.</li>
+<li><strong>rustfmt</strong> — formats Rust code examples consistently. Run <code>cargo fmt</code> before committing.</li>
+<li><strong>typos</strong> — catches spelling mistakes in prose and code. Run <code>typos</code> across the repository.</li>
+<li><strong>markdownlint</strong> — enforces Markdown formatting rules such as heading structure and list style. Run <code>markdownlint 'book/src/**/*.md'</code>.</li>
+</ul>
+<h3 id="pre-submission-checklist"><a class="header" href="#pre-submission-checklist">Pre-submission Checklist</a></h3>
+<p>Before opening a pull request that changes documentation:</p>
+<ol>
+<li>Run <code>cd book &amp;&amp; mdbook build</code> and confirm it succeeds without warnings.</li>
+<li>Run <code>typos</code> and fix any reported issues.</li>
+<li>Run <code>markdownlint</code> on changed files.</li>
+<li>Confirm all code examples compile and all links resolve.</li>
+</ol>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../docs/best-practices.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../docs/common-pitfalls.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                             </a>
 
-                            <a rel="next prefetch" href="../docs/glossary.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="../docs/benchmarks.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                             </a>
 
@@ -299,11 +338,11 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../docs/best-practices.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../docs/common-pitfalls.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg></span>
                     </a>
 
-                    <a rel="next prefetch" href="../docs/glossary.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="../docs/benchmarks.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <span class=fa-svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. --><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></span>
                     </a>
             </nav>
@@ -329,9 +368,11 @@
 
         <script src="../clipboard-1626706a.min.js"></script>
         <script src="../highlight-abc7f01d.js"></script>
-        <script src="../book-c22b7243.js"></script>
+        <script src="../book-609e4cb8.js"></script>
 
         <!-- Custom JS scripts -->
+        <script src="../theme/analytics-2354a5fb.js"></script>
+        <script src="../src/theme/language-selector-f7cc599e.js"></script>
 
 
 
